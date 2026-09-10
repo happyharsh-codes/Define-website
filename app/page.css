@@ -1,0 +1,27 @@
+.home-dashboard{
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+
+    color: white;
+    background-color: rgb(101, 101, 101);
+    position: relative;
+
+    margin-top: var(--nav-height);
+    padding: 3rem;
+}
+
+.contents-top-left{
+    padding: 2rem;
+
+    position: absolute;
+    top:0;
+    left: 0
+}
+
+.contents-bottom-right{
+    padding: 2rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
