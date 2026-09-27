@@ -44,71 +44,74 @@ input:focus{
 }
 
 /* Header File */
-#main-pg-header{
-    padding: 0 0.5rem;
-    height: var(--nav-height) ;
+#navbar-main{
+    height: var(--nav-height);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-
-    z-index: 100;
-
-    color: white;
     background-color: rgb(20, 20, 20);
+    color: white;
+
     border: 2px solid var(--green-yellow);
+    border-radius: 3px;
 }
 
-.main-pg-header section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2rem;
-}
-.main-pg-header-left{
-    width: max-content;
-    justify-content: flex-start;
-}
-
-.main-pg-header-middle{
-    width: auto;
-    min-width: 0;
-    justify-content: flex-start;
-}
-
-.main-pg-header-rigth{
-    width: max-content;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-.header-logo{
-    width: 100%;
-    height: 100%;
-
+.navbar-main-right{
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: flex-end;
+
+    width: 100%;
+    height: 100%;
 }
-.header-logo h1{
-    font-family: Sdrobotics;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: transform 0.3s ease-in-out;
+
+.navbar-main-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;
+
 }
-.header-logo:hover{
-    scale: 1.2;
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
-.header-nav-btn{
-    width: 4rem;
-    height: 1rem;
-    border-radius: 7px;
-    padding: 1rem;
+.navbar-logo-title{
+    font-family: MartianRobo;
+    font-size: 3.5rem;
+}
+.navbar-main-middle{
+    min-height: 100%;
+    min-width: 0;
+}
+.navbar-main-right nav{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navbar-main-right-btns{
+    font-family: monospace, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px; 
+
     color: white;
 }
+
 /* Button Component */
 .button{
     border: none;

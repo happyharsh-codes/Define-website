@@ -6,6 +6,7 @@
     background-color: rgb(101, 101, 101);
     position: relative;
 
+
     margin-top: var(--nav-height);
     padding: 3rem;
 }
@@ -24,4 +25,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.animstrip{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.animstrip-letter{
+    color: var(--light-green);
+    font-family: monospace;
+    font-size: 1.5rem;
 }
